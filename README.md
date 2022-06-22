@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+O que e Recoil : e uma biblioteca de gerenciamento de estado para aplicações feitas em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Os Principais conceitos e funções basicas:
 
-## Available Scripts
+atom: sao pequenas unidades de estado, ele possui uma chave unica e valor default
 
-In the project directory, you can run:
+useRecoilValue: Usamos esse hook quando pretendemos apenas acessar o atomo, permite acessar e alterar o valor do atomo
 
-### `npm start`
+Selectors : Selectors sao funções puras que acessam atomos e permitem modificar o estado sem ter que recriar o estado
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+RecoilRoot: A proposta do Recoil e ter um unico componente RecoilRoot na raiz da aplicação e de baixo dele ter os átomos que são
+estados manipulados por funções pura , chamdas de seletores nos componentes. O estado é utilizado pelo componente, mas não pertence
+ao componente. Isso o torna bastante escalável para que outros utilizem e modifiquem o estado conforme sua necessidade ou até mesmo
+seja transformado.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##English
+What is Recoil : and a state management library for applications made in React
 
-### `npm test`
+The main concepts and basic functions:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+atom: are small state units, it has a unique key and default value
 
-### `npm run build`
+useRecoilValue: We use this hook when we only intend to access the atom, it allows accessing and changing the atom's value
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Selectors : Selectors are pure functions that access atoms and allow you to modify the state without having to recreate the state.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+RecoilRoot: The Recoil proposal is to have a single RecoilRoot component at the root of the application and under it have the atoms that are
+states handled by pure functions, called selectors on components. The state is used by the component, but does not belong
+to the component. This makes it quite scalable for others to use and modify the state as per their need or even
+be transformed.
