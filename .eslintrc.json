@@ -1,0 +1,88 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "jsx-a11y",
+        "import",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "@typescript-eslint/no-shadow": [
+            "error"
+        ],
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "ignoreRestSiblings": true
+            }
+        ],
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "consistent-return": "off",
+        "global-require": "off",
+        "import/extensions": [
+            "off",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "import/no-unresolved": "off",
+        "import/prefer-default-export": "off",
+        "react/require-default-props":"off",
+        "react/function-component-definition":"off",
+        "@typescript-eslint/no-explicit-any":"off",
+        "no-plusplus": "off",
+        "no-shadow": "off",
+        "no-unused-vars": "off",
+        "no-use-before-define": "off",
+        "no-useless-return": "off",
+        "comma-dangle":"off",
+        "max-len":"off",
+        "no-undef":"off",
+        "react-hooks/exhaustive-deps": [
+            "warn",
+            {
+                "additionalHooks": "useRecoilCallback"
+            }
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "react/forbid-prop-types": "off",
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".tsx",
+                    ".ts"
+                ]
+            }
+        ],
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-uses-react": "off",
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off"
+    }
+}
