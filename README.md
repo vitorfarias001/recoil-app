@@ -1,4 +1,4 @@
-O que e Recoil : e uma biblioteca de gerenciamento de estado para aplicações feitas em React
+O que é Recoil : É uma biblioteca de gerenciamento de estado para aplicações feitas em React
 
 Os Principais conceitos e funções basicas:
 
@@ -6,9 +6,9 @@ atom: sao pequenas unidades de estado, ele possui uma chave unica e valor defaul
 
 useRecoilValue: Usamos esse hook quando pretendemos apenas acessar o atomo, permite acessar e alterar o valor do atomo
 
-Selectors : Selectors sao funções puras que acessam atomos e permitem modificar o estado sem ter que recriar o estado
+Selectors : Selectors são funções puras que acessam atomos e permitem modificar o estado sem ter que recriar o estado
 
-RecoilRoot: A proposta do Recoil e ter um unico componente RecoilRoot na raiz da aplicação e de baixo dele ter os átomos que são
+RecoilRoot: A proposta do Recoil é ter um unico componente RecoilRoot na raiz da aplicação e de baixo dele ter os átomos que são
 estados manipulados por funções pura , chamdas de seletores nos componentes. O estado é utilizado pelo componente, mas não pertence
 ao componente. Isso o torna bastante escalável para que outros utilizem e modifiquem o estado conforme sua necessidade ou até mesmo
 seja transformado.
